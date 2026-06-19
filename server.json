@@ -1,11 +1,16 @@
 {
-  "$schema": "https://modelcontextprotocol.io/schemas/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.iQuesta/MCP-iQuesta",
   "description": "Recherche d'offres de stage et d'alternance en France via le réseau iQuesta.com",
-  "version": "1.0.0",
-  "remote": {
-    "url": "https://mcp.iquesta.com/api/mcp",
-    "transport": "streamable-http"
+  "repository": {
+    "url": "https://github.com/iQuesta/MCP-iQuesta",
+    "source": "github"
   },
-  "homepage": "https://iquesta.com"
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.iquesta.com/api/mcp"
+    }
+  ]
 }
