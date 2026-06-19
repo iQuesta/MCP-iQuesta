@@ -15,8 +15,9 @@ https://mcp.iquesta.com/api/mcp
 |---|---|
 | `search_jobs` | Recherche des offres par mots-clés, région, discipline, type de contrat |
 | `get_job` | Récupère le détail complet d'une offre par son ID |
-| `get_similar_jobs` | Trouve des offres similaires à une offre donnée |
 | `list_filters` | Liste les valeurs possibles pour les filtres (régions, disciplines, types de contrat) |
+
+> **Note** : le tool `get_similar_jobs` est temporairement désactivé — l'endpoint API correspondant n'existe pas encore côté iQuesta. Il sera réactivé une fois développé.
 
 ## Exemples d'utilisation
 
