@@ -1,6 +1,6 @@
 # iQuesta MCP Server
 
-[![smithery badge](https://smithery.ai/badge/julien-yell/iquesta)](https://smithery.ai/servers/julien-yell/iquesta)
+[![LightNow](https://lightnow.ai/badge/io.github.iQuesta/MCP-iQuesta)](https://lightnow.ai/servers/io.github.iQuesta/MCP-iQuesta)
 
 Connecteur [Model Context Protocol](https://modelcontextprotocol.io) pour [iQuesta.com](https://iquesta.com), plateforme de recherche d'offres de stage et d'alternance en France.
 
