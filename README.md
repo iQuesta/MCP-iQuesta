@@ -27,7 +27,7 @@ https://mcp.iquesta.com/api/mcp
 |---|---|---|
 | `term` | string | Mots-clés recherchés dans le **titre** de l'annonce |
 | `description` | string | Mots-clés recherchés dans le **texte complet** de l'annonce (missions, compétences requises...) |
-| `disciplines` | integer | ID de discipline (secteur large), obtenu via `list_filters(filter='disciplines')` |
+| `disciplines` | integer | ID de discipline, obtenu via `list_filters(filter='disciplines')`. Ex : `3` = "Commerce / Distribution / Vente" |
 | `matieres` | integer[] | Liste d'IDs de matières (plus granulaire que `disciplines`), obtenue via `list_filters(filter='matieres')`. Ex : `27` = "Informatique - Développement" |
 | `regions` | integer | ID de région française, obtenu via `list_filters(filter='regions')` |
 | `contracts` | string | ID du type de contrat : `1` (Stage), `2` (Alternance), `-4` (Emploi), `-5` (Job étudiant) |
@@ -35,9 +35,9 @@ https://mcp.iquesta.com/api/mcp
 | `duration` | integer | Durée maximale de la mission en mois |
 | `limit` | integer | Nombre maximum de résultats (défaut : 10, max recommandé : 20) |
 
-Au moins un des paramètres `term`, `description` ou `matieres` est requis.
+Au moins un des paramètres `term`, `description`, `matieres`, `disciplines` ou `regions` est requis.
 
-`disciplines` (16 valeurs, secteurs larges) et `matieres` (69 valeurs, plus précises) sont deux niveaux de granularité indépendants — utiliser `matieres` pour un filtrage fin (ex : "Développement web" plutôt que "Informatique").
+`disciplines` (60 valeurs) et `matieres` (68 valeurs) : chaque matière appartient à une discipline ; la plupart correspondent une pour une, seules quelques disciplines (Chimie, Immobilier) sont subdivisées. Utiliser `disciplines` en priorité, `matieres` pour un filtrage plus fin.
 
 ## Exemples d'utilisation
 
